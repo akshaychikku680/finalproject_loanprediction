@@ -19,8 +19,8 @@ with gzip.open(input_file, 'rb') as f_in:
 with open('scale.pkl', 'rb') as scalerfile:
     scaler = pickle.load(scalerfile)
     
-# with open('loan.pkl', 'rb') as model_file:
-#     model = pickle.load(model_file)
+with open('loan_unzipped.pkl', 'rb') as model_file:
+    model = pickle.load(model_file)
 
 #creating a home page
 @app.route('/')
