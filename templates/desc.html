@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Dataset</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://happay.com/blog/wp-content/uploads/sites/12/2022/09/baas-banking-as-a-service-.png');
+            background-size: cover;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+            }
+        .overlay {
+            background-color: rgba(72, 61, 139, 0.5); /* Adjust the color and opacity as needed */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1; /* Place the overlay behind other content */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 10px;
+        }
+        nav {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            text-align: right; /* Align the content to the right */
+          }
+          
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+        nav ul {
+            list-style: none; /* Remove default bullet points for list items */
+            margin: 0;
+            padding: 0;
+          }
+          
+        nav li {
+            display: inline-block; /* Display menu items horizontally */
+            margin-right: 20px; /* Add spacing between menu items */
+          }
+          
+        nav a {
+            text-decoration: none; /* Remove underlines from links */
+            color: #ffffff; /* Link color */
+            transition: color 0.3s; /* Smooth color transition on hover */
+          
+            /* Optional: Add hover effect */
+            &:hover {
+              color: #ff9900; /* Change color on hover */
+            }
+          }
+        h1 {
+            text-align: center;
+            color: #000000;
+        }
+        p {
+            color:#000000;
+        }
+        .dataset-overview {
+            margin-top: 20px;
+        }
+        .dataset-overview h2 {
+            color: #000000;
+        }
+        .dataset-overview ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .dataset-overview ul li {
+            background: rgba(0, 0, 0, 0.1);
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .dataset-overview ul li {
+                padding: 8px;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.2em;
+            }
+            .dataset-overview h2 {
+                font-size: 1em;
+            }
+            .dataset-overview ul li {
+                font-size: 0.9em;
+                padding: 6px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Your Bank</h1>
+        <p>Welcome to the home page of Your Bank.</p>
+        
+        <div class="dataset-overview">
+            <h2>Bank Fuctionalities</h2>
+            <ul>
+                <li>Accepting Deposits</li>
+                <p>One of the primary functions of banks is to accept deposits from individuals and businesses. These deposits can be in various forms, such as savings accounts, fixed deposits, or recurring deposits. By providing safe custody for these funds, banks encourage saving habits among the public.</p>
+                <li>Granting Loans and Advances</li>
+                <p>Banks provide loans and advances to individuals, businesses, and even governments. These loans serve various purposes, including business expansion, construction projects, or meeting day-to-day expenses. By granting credit, banks contribute to economic growth and development.</p>
+                <li>Creation of Credit</li>
+                <p>Banks have the unique ability to create credit. When they lend money, they effectively create new money in the form of credit. This credit creation process plays a vital role in stimulating economic activity and supporting investment.</p>
+                <li>Payment and Settlement System</li>
+                <p>Banks facilitate transactions by providing payment and settlement services. Whether it’s transferring funds between accounts, processing checks, or enabling electronic payments, banks ensure smooth financial transactions.</p>
+                <li>Financial Advice</li>
+                <p>Banks offer financial advisory services to their customers. This includes investment advice, retirement planning, and guidance on managing personal finances. They help individuals make informed decisions about their money.</p>
+                <li>Foreign Exchange Services</li>
+                <p>Banks facilitate foreign exchange transactions, allowing businesses and individuals to convert one currency into another. They play a critical role in international trade and investment by providing currency exchange services.</p>
+                <li>Issue of Notes and Drafts</li>
+                <p>Banks issue banknotes (currency) and drafts (like cashier’s checks) that serve as a medium of exchange. These instruments are widely accepted for transactions within the economy.                </p>
+                <li>Locker Facility</li>
+                <p>Banks offer safe deposit lockers where customers can securely store valuable items, documents, or important records.</p>
+                <li>Underwriting of Shares</li>
+                <p>Banks participate in underwriting initial public offerings (IPOs) by purchasing unsold shares. This helps companies raise capital from the public markets.</p>
+                <li>Dealing in Foreign Exchange</li>
+                <p>Besides facilitating foreign exchange transactions, banks also engage in currency trading and hedging activities in global markets.</p>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Approval Predictor</title>
+    <link rel="stylesheet" href="../static/css/style1.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home Page</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Loan Approval Predictor</h1>
+        <div class="container">
+            <form action="/predict" method="POST">
+                <label for="income_annum">Income Annum:</label>
+                <input type="number" id="income_annum" name="income_annum" step="0.1" required>
+
+                <label for="loan_amount">Loan Amount:</label>
+                <input type="number" id="loan_amount" name="loan_amount" step="0.1" required>
+
+                <label for="loan_term">Loan Term:</label>
+                <input type="number" id="loan_term" name="loan_term" step="0.1" required>
+
+                <label for="cibil_score">Cibil Score:</label>
+                <input type="number" id="cibil_score" name="cibil_score" step="0.1" required>
+
+                <label for="residential_assets_value">Residential Assets Value:</label>
+                <input type="number" id="residential_assets_value" name="residential_assets_value" step="0.1" required>
+
+                <label for="commercial_assets_value">Commercial Assets Value:</label>
+                <input type="number" id="commercial_assets_value" name="commercial_assets_value" step="0.1" required>
+
+                <label for="luxury_assets_value">Luxury Assets Value:</label>
+                <input type="number" id="luxury_assets_value" name="luxury_assets_value" step="0.1" required>
+
+                <label for="bank_asset_value">Bank Asset Value:</label>
+                <input type="number" id="bank_asset_value" name="bank_asset_value" step="0.1" required>
+
+                <input type="submit" value="Predict">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
