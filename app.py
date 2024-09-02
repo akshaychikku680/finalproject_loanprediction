@@ -4,12 +4,23 @@ import pickle
 
 app = Flask(__name__)
 
+import gzip
+import shutil
+
+input_file = 'loan.pkl.gz'
+output_file = 'loan_unzipped.pkl'
+
+with gzip.open(input_file, 'rb') as f_in:
+    with open(output_file, 'wb') as f_out:
+        shutil.copyfileobj(f_in, f_out)
+
+
 #Load the scaler and model from the pickle files
 with open('scale.pkl', 'rb') as scalerfile:
     scaler = pickle.load(scalerfile)
     
-with open('loan.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+# with open('loan.pkl', 'rb') as model_file:
+#     model = pickle.load(model_file)
 
 #creating a home page
 @app.route('/')
